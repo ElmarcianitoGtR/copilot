@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whack-a-Mole Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🔨 Atrapa al Topo</h1>
+        
+        <div class="game-info">
+            <div class="score-container">
+                <p class="label">Puntuación</p>
+                <p class="score" id="score">0</p>
+            </div>
+            
+            <div class="timer-container">
+                <p class="label">Tiempo</p>
+                <p class="timer" id="timer">30</p>
+            </div>
+        </div>
+
+        <button class="start-btn" id="startBtn">Iniciar Juego</button>
+
+        <div class="game-board" id="gameBoard">
+            <div class="hole" id="hole-0"></div>
+            <div class="hole" id="hole-1"></div>
+            <div class="hole" id="hole-2"></div>
+            <div class="hole" id="hole-3"></div>
+            <div class="hole" id="hole-4"></div>
+            <div class="hole" id="hole-5"></div>
+            <div class="hole" id="hole-6"></div>
+            <div class="hole" id="hole-7"></div>
+            <div class="hole" id="hole-8"></div>
+        </div>
+
+        <div class="game-over-modal" id="gameOverModal">
+            <div class="modal-content">
+                <h2>🎮 Juego Terminado</h2>
+                <p>Tu puntuación final:</p>
+                <p class="final-score" id="finalScore">0</p>
+                <button class="restart-btn" id="restartBtn">Jugar de Nuevo</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"><\/script>
+</body>
+</html>
